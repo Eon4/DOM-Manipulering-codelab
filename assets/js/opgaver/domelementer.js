@@ -32,9 +32,15 @@ Du skal oprette følgende HTML elementer i Elementet med id opgaveTwo.
 - et h2 med teksten: Opgave 2.1 løsning
 - et p med teksten: Jeg har løst opgave 2.1
 */
+const myLiveList = document.getElementById('opgaveTwo');
 
+let myHeadline = document.createElement('h2');
+myHeadline.innerHTML = 'Opgave 2.1 løsning';
+console.log(myHeadline);
 
-
+let myParagraph = document.createElement('p');
+myParagraph.innerHTML = 'Jeg har løst opgave 2.1';
+console.log(myParagraph);
 
 
 // opgave 3 liveHTML lists
@@ -42,7 +48,7 @@ Du skal oprette følgende HTML elementer i Elementet med id opgaveTwo.
 Du skal finde alle elementer med klassen purpleFigures og console logge resultatet
 */
 
-// din kode her
+console.log(document.getElementsByClassName('purpleFigures'));
 
 
 /* opgave 3.2
@@ -81,3 +87,13 @@ const myData = {
 
 
 
+//ekstra 
+// console.log(document.createElement("<h2>Opgave 2.1 løsning</h2>"));
+// console.log(document.createTextNode("Opgave 2.1 løsning"));
+
+
+// let myArray = Array.from('Opgave 2');
+
+// console.log(document.getElementById('opgaveTwo'));
+
+// const myLiveList = document.createElement("h1");
