@@ -88,19 +88,52 @@ const myData = {
     description: 'En tiger er et stort, katteagtig rovdyr med orange og sort striber i pelsen og skarpe tænder og kløer.'
 };
 
+const myCardElement=document.getElementById('opgaveFour');
 
-// din kode her
+console.log(myCardElement);
+
+let myArticle=document.createElement('article');
+
+//HERE FÅR VI SAT EN NY CLASS SOM KAN ELLERS REDIGERES I CSS
+myArticle.classList.add('galleryCard');
 
 
+let myHeadLine=document.createElement('h2');
+myHeadLine.innerHTML=myData.name;
+
+let myImage=document.createElement('img');
+myImage.src=myData.image;
+myImage.alt=myData.name;
+
+let myDesc = document.createElement('p');
+myDesc.innerText = myData.description;
+
+myArticle.appendChild(myHeadLine);
+myArticle.appendChild(myImage);
+myArticle.appendChild(myDesc);
 
 
-//ekstra 
-// console.log(document.createElement("<h2>Opgave 2.1 løsning</h2>"));
-// console.log(document.createTextNode("Opgave 2.1 løsning"));
+myCardElement.appendChild(myArticle);
 
 
-// let myArray = Array.from('Opgave 2');
+// CSS class for gallery cards
+// let galleryCardClass = 'galleryCard';
 
-// console.log(document.getElementById('opgaveTwo'));
+// the app lives here
+// const myApp = document.getElementById('opgaveFour');
 
-// const myLiveList = document.createElement("h1");
+
+// buildGallery();
+
+// function buildGallery() {
+
+//     for (let myIndex in myData) {
+
+//         let myName = myData[myIndex].name;
+//         let myUrl = myData[myIndex].picture;
+//         let myDescription = myData[myIndex].description;
+
+//         buildCard(myName, myUrl, myDescription);
+//     }
+
+// }

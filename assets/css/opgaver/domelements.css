@@ -22,3 +22,11 @@
 .purpleFigures {
   background-color: rgb(251, 0, 255);
 }
+
+.galleryCard img{
+  width: 100%;
+}
+
+/* .galleryCard h2{
+  color: aqua;
+} */
