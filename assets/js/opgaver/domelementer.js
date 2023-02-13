@@ -7,7 +7,12 @@ Du skal finde elementet med id="redFigure" og console logge det.
 Du skal finde elementet med id="yellowFigure" og console logge det. 
 */
 
-// din kode her
+// document.getElementById("redFigure");
+
+// console.log("redFigure");
+
+//MAN FÅR ET SPECIFIKT ELEMENT MED EN MASSE INFO VED AT KIGGE PÅ CONSOLE
+console.log(document.getElementById('redFigure'));
 
 
 /* opgave 1.2
@@ -15,8 +20,10 @@ Du skal ændre baggrundsfarve på de to elementer du har fundet i opgave 1.1
 farven på elementerne skal være blå. brug evt. elelement.style.backgroundColor
 */
 
+console.log(document.getElementById('redFigure').style.backgroundColor  = "blue");
+console.log(document.getElementById('yellowFigure').style.backgroundColor  = "blue");
 
-// din kode her
+// document.getElementById("myP2").style.color = "blue"; DENNE ÆNDRE KUN FARVEN PÅ TEKSTEN
 
 
 
@@ -27,7 +34,7 @@ Du skal oprette følgende HTML elementer i Elementet med id opgaveTwo.
 */
 
 
-// din kode her
+
 
 
 // opgave 3 liveHTML lists
